@@ -1,0 +1,5 @@
+<div *ngFor="let user of users">
+        <strong>Id: </strong>{{user.id}} &nbsp;
+        <strong>Name:</strong>{{user.name}}&nbsp;
+        <button (click)="deleteUser.emit(user.id)">Remove</button>
+</div>
